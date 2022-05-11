@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 public class UltimateTeam {
 
     private ArrayList<UltimatePlayer> players;
@@ -12,7 +11,7 @@ public class UltimateTeam {
     public String getCutters(){
         String cutters = "";
         for (UltimatePlayer i: players){
-            if(i.getPosition()=="cutter")
+            if(i.getPosition() == "cutter")
                 cutters += i + "\n\n";
         }
         return cutters;
@@ -20,21 +19,20 @@ public class UltimateTeam {
     public String getHandlers(){
         String handlers = "";
         for (UltimatePlayer i: players){
-            if(i.getPosition()=="handler")
+            if(i.getPosition() == "handler")
                 handlers += i + "\n\n";
         }
         return handlers;
     }
     public String toString(){
-        String coacheese = "";
-        String playears = "";
+        String coachlist = "";
+        String playerlist = "";
         for(Coach i: coaches){
-            coacheese += i + "\n\n";
+            coachlist += i + "\n\n";
         }
         for (UltimatePlayer i: players){
-            playears += i + "\n\n";
+            playerlist += i + "\n\n";
         }
-        return "COACHES\n" + coacheese + "PLAYERS\n" + playears;
+        return "COACHES : " + coachlist + "\nPLAYERS : " + playerlist;
     }
-
 }

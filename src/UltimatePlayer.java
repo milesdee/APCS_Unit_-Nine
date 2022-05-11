@@ -1,6 +1,6 @@
 public class UltimatePlayer extends Player{
 
-    private static int jerseyNumber = 1;
+    private static int playerNumber = 1;
     private int jersey;
     private String position;
 
@@ -12,8 +12,8 @@ public class UltimatePlayer extends Player{
         else{
             this.position = "handler";
         }
-        jersey = jerseyNumber;
-        jerseyNumber++;
+        jersey = playerNumber;
+        playerNumber++;
     }
 
     UltimatePlayer(){

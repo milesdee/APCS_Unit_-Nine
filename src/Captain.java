@@ -1,23 +1,22 @@
 public class Captain extends UltimatePlayer {
-    private boolean type;
+    private boolean captainType;
 
     public Captain(String firstName, String lastName, String position, boolean type){
         super(firstName, lastName, position);
-        this.type = type;
+        this.captainType = type;
     }
-
     public Captain(){
         super();
-        type = false;
+        captainType = false;
     }
     public String toString(){
-        String typeeee = "";
-        if (type==true){
-            typeeee+= "offense";
+        String captainrole = "";
+        if (captainType){
+            captainrole+= "offense";
         }
-        else if(type==false){
-            typeeee += "defense";
+        else{
+            captainrole += "defense";
         }
-        return super.toString() + "\n   Captain: "+ typeeee;
+        return super.toString() + "\n   Captain: "+ captainrole;
     }
 }
